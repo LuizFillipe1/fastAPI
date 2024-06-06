@@ -3,8 +3,8 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get('/')
-async def raiz():
+@app.get('/msg')
+async def msg():
     return {"msg": "FastAPI na Geek University"}
 
 
